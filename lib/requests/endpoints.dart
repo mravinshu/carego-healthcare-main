@@ -1,0 +1,11 @@
+const String BASE_URL = "https://carego-healthcare.herokuapp.com";
+// const String LOGIN = "/login";
+// const String REGISTER = "/register";
+const String PROFILE = "/profile";
+const String CATEGORY = "/category";
+const String SERVICES = "/services";
+const String PAYMENT_SUCCESS = "/payment-response";
+// const String BOOKING = "/user/4/service/2001/bookService";
+const BOOKING_SERVICE = "/bookService";
+const EDIT_USER = "/edituser";
+const String API_RAZORPAY_KEY = "rzp_test_8X3VcTab99u9Dr";

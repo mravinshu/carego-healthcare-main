@@ -1,0 +1,31 @@
+Error:- 
+showDialog<void>(
+      context: context,
+      barrierDismissible: true,
+      builder: (BuildContext context) {
+        return PopUpResponse(
+          height: ScreenUtil.defaultSize.height,
+          width: ScreenUtil.defaultSize.width,
+          message: 'Try Again',
+          rive: 'assets/Rive/error_icon.riv',
+          title: 'Error',
+          color: Color.fromARGB(255, 255, 0, 0),
+        );
+      },
+    );
+
+Sucess:-
+showDialog<void>(
+      context: context,
+      barrierDismissible: true,
+      builder: (BuildContext context) {
+        return PopUpResponse(
+          height: ScreenUtil.defaultSize.height,
+          width: ScreenUtil.defaultSize.width,
+          message: 'Ok',
+          rive: 'assets/Rive/sucess.riv',
+          title: 'Success',
+          color: Colors.green,
+        );
+      },
+    );

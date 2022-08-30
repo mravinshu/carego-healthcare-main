@@ -1,0 +1,6 @@
+category_response = response for categories
+login = boolen
+user_id = userId of the user
+user_name = name of user
+user_email = email of user
+user_phone = phone of user

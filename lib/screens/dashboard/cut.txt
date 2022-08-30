@@ -1,0 +1,32 @@
+Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Container(
+                            decoration: BoxDecoration(
+                                color: drawer_icon_back,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(15))),
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: DropdownButtonFormField<String>(
+                                decoration:
+                                    InputDecoration(border: InputBorder.none),
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(15)),
+                                onChanged: (value) {
+                                  getService(value);
+                                },
+                                hint: Text("  Select Category"),
+                                items: [
+                                  for (int i = 0; i < postJson.length; i++)
+                                    DropdownMenuItem<String>(
+                                      value: postJson[i].id.toString(),
+                                      child: Text(postJson[i].title),
+                                    ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                      )
